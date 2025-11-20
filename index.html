@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login">
+            <div class="form-login">
+                <div class="bem-vindo">
+                    <h2>Bem-vindo de volta</h2><p>Marcos</p>
+                </div>
+                <div class="ads">
+                    <lord-icon
+                    src="json/wired-outline-1068-international-music-hover-pinch.json"
+                    trigger="loop"
+                    style="width:90px;height:90px">
+                </lord-icon>
+                </div>
+                <form action="">
+                    <label for="">Usuário</label>
+                    <input class="input-text" type="text" placeholder="Digite seu usuário">
+                    <label for="">Senha</label>
+                    <input class="input-text" type="text" placeholder="Digite sua senha">
+                    <div class="checkbox">
+                        <input type="checkbox" id="lemrarCheckbox">
+                        <label for="meuCheckbox">Lembrar da próxima vez ?</label>
+                    </div>
+                    <button type="button" class="btn-enviar" onclick="teste()">Enviar</button>
+                </form>
+            </div>
+        </div>
+        <div id="animacao"></div>
+        <div class="registrar">
+             <div class="form-login">
+                <div class="bem-vindo">
+                    <h2>Uma honra ter você por aqui.</h2>
+                </div>
+               <div class="ads-upload" >
+                    <input type="file" id="upload" accept="image/*">
+                    <label for="upload" class="upload-circle" id="circle-preview"></label>
+               </div>
+                <form action="">
+                    <label for="">Usuário</label>
+                    <input class="input-text" type="text" placeholder="Digite seu usuário">
+                    <label for="">Senha</label>
+                    <input class="input-text" type="text" placeholder="Digite sua senha">
+                    <div class="checkbox">
+                        <input type="checkbox" id="lemrarCheckbox">
+                        <label for="meuCheckbox">Lembrar da próxima vez ?</label>
+                    </div>
+                    <button type="button" class="btn-enviar" onclick="teste()">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.0/lottie.min.js"></script>
+    <script>
+    lottie.loadAnimation({
+        container: document.getElementById('animacao'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'json/manimi.json'
+    });
+     lottie.loadAnimation({
+        container: document.getElementById('circle-preview'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'json/Profile.json'
+    });
+    function teste(){
+        window.location.href = "page/main.html";
+    }
+    
+</script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+.tocar-container {
+    width: 85%;
+    height: 89%;
+    position: absolute;
+    border-radius: 8px;
+    border: 1px solid #8930E8;
+    left: 10%;
+    top: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.info-album, .info-music {
+    width: 45%;
+    height: 80%;
+    border: 1px solid #8930E8;
+    border-radius: 8px;
+}
+.nome-album{
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+h2 {
+    padding: 0px;
+    margin: 22px 0px -12px 0px;
+}
+.album-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.album-img img{
+    width: 200px !important;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid #8930E8;
+}
+.carregamento-album {
+    width: 80%;
+    padding: 15px;
+    border-radius: 12px;
+    color: white;
+    font-family: sans-serif;
+    align-self: center;
+    margin-left: 23px;
+    margin-top: -4px;
+}
+.barra-container {
+    width: 100%;
+    height: 8px;
+    background: #333;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.barra {
+    width: 0%;
+    height: 100%;
+    background: #8a2be2;
+}
+
+.tempos {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.controles {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.controles button {
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+i{
+    color: #8a2be2;
+}
+i:hover{
+    color: #ffffff;
+}
+.top-opcoes {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.top-opcoes button {
+    background: none;
+    border: none;
+    font-size: 22px;
+    color: #8a2be2;
+    cursor: pointer;
+}
+
+.top-opcoes button:hover {
+    color: #ffffff;
+}
+.historico {
+    top: 50%;
+    left: 76%;
+}
+
+.favorito, .aleatorio, .historico {
+    position: absolute;
+    width: 38%;
+    height: 407px;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    overflow-y: scroll;
+    border: 1px solid #8930E8;
+}
+.qtd_hist {
+    top: 7%;
+    left: 63%;
+}
+

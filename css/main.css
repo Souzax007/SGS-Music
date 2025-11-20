@@ -1,0 +1,167 @@
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(0, 0, 0);
+            margin: 0 auto;
+            height: 100vh;
+            position: relative;
+        }
+        .container{
+            position: relative;
+            width: 1001px;
+            height: 600px;
+            border-radius: 5%;
+            border: 1px solid #8930E8;
+
+        }
+        .pai{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            position: absolute;
+            width: 50px;
+            height: 90%;
+            border-radius: 20px;
+            background-color: black;
+            top: 50%;
+            left: 2%;
+            transform: translateY(-50%);
+            border: 1px solid #8930E8;
+
+        }
+        nav a i{
+            color: blueviolet;
+        }
+        nav a i:hover{
+            color: rgb(247, 253, 255);
+        }
+        .album{
+                position: absolute !important;
+                width: 80%;
+                height: 100px;
+                border: 1px solid #8930E8;
+                top: 14%;
+                left: 52%;
+                transform: translate(-50%, -50%);
+                border-radius: 10px;
+                padding: 10px;
+        }
+        .favorito, .aleatorio, .historico{
+                position: absolute;
+                width: 23%;
+                height: 368px;
+                border-radius: 10px;
+                transform: translate(-50%, -50%);
+                overflow-y: scroll;
+                border: 1px solid #8930E8;
+
+        }
+        .favorito {
+                top: 61%;
+                left: 23%;
+        }
+        .aleatorio {
+            top: 61%;
+            left: 52%;
+        }
+        .historico {
+            top: 61%;
+            left: 81%;
+    
+        }
+        .musica {
+                margin: 10px;
+                padding: 0px 10px;
+                border-radius: 5;
+                border: 1px solid #8930E8;
+                color: white;
+                text-align: start;
+                height: 34px;
+                display: flex;
+                align-items: center;
+        }
+        .musica a{
+            color: white;
+            text-decoration: none;
+        }
+        .splide__slide{
+            background-color: red;
+            width: 100px !important;
+            height: 100px;
+        }
+        .splide__slide img{
+            width: 100px !important;
+            height: 98px;
+            object-fit: cover;
+            border: 1px solid #8930E8;
+
+        }
+       #bg-lottie {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .favorito::-webkit-scrollbar,
+        .aleatorio::-webkit-scrollbar,
+        .historico::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        .favorito::-webkit-scrollbar-track,
+        .aleatorio::-webkit-scrollbar-track,
+        .historico::-webkit-scrollbar-track {
+            background: #eee;
+            border-radius: 10px;
+        }
+
+        .favorito::-webkit-scrollbar-thumb,
+        .aleatorio::-webkit-scrollbar-thumb,
+        .historico::-webkit-scrollbar-thumb {
+            background: #8a2be2;
+            border-radius: 10px;
+        }
+
+        .favorito::-webkit-scrollbar-thumb:hover,
+        .aleatorio::-webkit-scrollbar-thumb:hover,
+        .historico::-webkit-scrollbar-thumb:hover {
+            background: #6a1bb7;
+        }
+        .qtd_hist, .qtd_fav, .qtd_alea {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            font-weight: bold;
+            border: 1px solid #8930E8;
+            padding: 1px 0px;
+            border-radius: 4px;
+            height: 21px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+        }
+       .qtd_fav{
+            top: 27%;
+            left: 22%;
+        }
+        .qtd_alea{
+            top: 27%;
+            left: 51%;
+        }
+         .qtd_hist {
+            top: 27%;
+            left: 80%;
+        }
+          
+
+
+
+                
+       
