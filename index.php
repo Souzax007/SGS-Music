@@ -20,16 +20,16 @@
                     style="width:90px;height:90px">
                 </lord-icon>
                 </div>
-                <form action="">
+                <form action="db/login_user.php"  method="post">
                     <label for="">Usuário</label>
-                    <input class="input-text" type="text" placeholder="Digite seu usuário">
+                    <input class="input-text" type="text" name="nm_user" placeholder="Digite seu usuário">
                     <label for="">Senha</label>
-                    <input class="input-text" type="text" placeholder="Digite sua senha">
+                    <input class="input-text" type="text" name="ds_pass" placeholder="Digite sua senha">
                     <div class="checkbox">
                         <input type="checkbox" id="lemrarCheckbox">
                         <label for="meuCheckbox">Lembrar da próxima vez ?</label>
                     </div>
-                    <button type="button" class="btn-enviar" onclick="teste()">Enviar</button>
+                    <button type="submit" class="btn-enviar">Enviar</button>
                 </form>
             </div>
         </div>
@@ -43,16 +43,16 @@
                     <input type="file" id="upload" accept="image/*">
                     <label for="upload" class="upload-circle" id="circle-preview"></label>
                </div>
-                <form action="">
+                <form action="db/registrar_user.php" method="post">
                     <label for="">Usuário</label>
-                    <input class="input-text" type="text" placeholder="Digite seu usuário">
+                    <input class="input-text" type="text" name="nm_user" placeholder="Digite seu usuário">
                     <label for="">Senha</label>
-                    <input class="input-text" type="text" placeholder="Digite sua senha">
+                    <input class="input-text" type="text" name="ds_pass" placeholder="Digite sua senha">
                     <div class="checkbox">
                         <input type="checkbox" id="lemrarCheckbox">
                         <label for="meuCheckbox">Lembrar da próxima vez ?</label>
                     </div>
-                    <button type="button" class="btn-enviar" onclick="teste()">Enviar</button>
+                    <button type="submit" class="btn-enviar">Enviar</button>
                 </form>
             </div>
         </div>
