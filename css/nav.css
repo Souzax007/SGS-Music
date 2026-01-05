@@ -1,0 +1,22 @@
+        .pai{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            position: absolute;
+            width: 50px;
+            height: 90%;
+            border-radius: 20px;
+            background-color: black;
+            top: 50%;
+            left: 2%;
+            transform: translateY(-50%);
+            border: 1px solid #8930E8;
+
+        }
+        nav a i{
+            color: blueviolet;
+        }
+        nav a i:hover{
+            color: rgb(247, 253, 255);
+        }

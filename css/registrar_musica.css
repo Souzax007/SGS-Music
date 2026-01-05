@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #000;
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    background: url("https://wallpapercave.com/wp/wp14955521.webp") center / cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    color: #fff;
+}
+
+table thead th,
+table th {
+    padding: 10px;
+    text-align: left;
+    font-weight: 600;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.25);
+}
+
+table tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+table td {
+    padding: 10px;
+    vertical-align: middle;
+}
+
+table tr:last-child {
+    border-bottom: none;
+}
+
+
+.container h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #c7d2fe;
+}
+
+.form-box-adicionar {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    backdrop-filter: blur(12px);
+    background: rgba(17, 25, 40, 0.75);
+    border-radius: 18px;
+    display: flex;
+    gap: 10px;
+}
+
+.form-music {
+    display: flex;
+    gap: 30px;
+}
+option {
+    color: black;
+}
+
+.upload-wrapper-direita {
+    background: rgba(0,0,0,0.35);
+    border-radius: 16px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+    max-width: 600px;
+}
+
+
+.input-album {
+    flex: 1;
+    background: rgba(0,0,0,0.35);
+    border-radius: 16px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    font-weight: 600;
+    color: #e5e7eb;
+}
+
+.input-grupo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #6366f1;
+    background: transparent;
+    color: #fff;
+    font-size: 15px;
+}
+
+input:disabled {
+    opacity: 0.6;
+}
+
+
+.upload-box{
+    border: 2px dashed #818cf8;
+    border-radius: 16px;
+    background: #f8faff;
+    color: #111827;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px 5px 10px;
+}
+
+.upload-box:hover {
+    background: #eef2ff;
+}
+
+.upload-box i {
+    font-size: 23px;
+    color: #6366f1;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.upload-box span {
+    display: block;
+    margin-top: 8px;
+    font-weight: 600;
+}
+
+.upload-box small {
+    color: #6b7280;
+}
+
+
+#novo_album_box {
+    margin-top: 10px;
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.upload-wrapper-esquerda {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#previewCapa {
+    margin-top: 10px;
+    max-width: 120px;
+    border-radius: 10px;
+}
+
+
+.btn-remover {
+    background: none;
+    border: none;
+    color: #ef4444;
+    font-size: 14px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.btn-remover:hover {
+    text-decoration: underline;
+}
+
+.d-none {
+    display: none;
+}
+
+.btn-footer {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.button {
+    position: relative;
+    width: 200px;
+    height: 46px;
+    border-radius: 12px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    overflow: hidden;
+    align-self: center;
+}
+
+.button::before {
+    content: "Confirmar upload";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg,#3fb352,#1ceb61);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #fff;
+    transform: translateY(100%);
+    transition: 0.4s;
+}
+
+.button::after {
+    content: "Adicionar música";
+    position: absolute;
+    inset: 0;
+    background: #700ec0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #fff;
+    transition: 0.4s;
+}
+
+.button:hover::before {
+    transform: translateY(0);
+}
+
+.button:hover::after {
+    transform: translateY(-100%);
+}
+
+@media (max-width: 900px) {
+    .form-music {
+        flex-direction: column;
+    }
+
+    .btn-footer {
+        position: static;
+        transform: none;
+        margin-top: 20px;
+        align-self: center;
+    }
+}
+
+
+
+.acoes {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.btn-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.2s ease;
+    font-size: 18px;
+}
+
+.btn-icon.editar {
+    color: #60a5fa;
+}
+
+.btn-icon.editar:hover {
+    background: rgba(96, 165, 250, 0.15);
+}
+
+.btn-icon.excluir {
+    color: #ef4444;
+}
+
+.btn-icon.excluir:hover {
+    background: rgba(239, 68, 68, 0.15);
+}
+
+.teste {
+    display: flex;
+    justify-content: space-around;
+    align-items: center ;
+    flex-direction: column;
+    width: 100px;
+    height: auto;
+    padding: 10px;
+}
+
+@media (max-width: 900px) {
+    .form-music {
+        flex-direction: column;
+    }
+
+    .btn-footer {
+        position: static;
+        transform: none;
+        margin-top: 20px;
+        align-self: center;
+    }
+}

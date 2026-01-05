@@ -16,6 +16,9 @@
     border: 1px solid #8930E8;
     border-radius: 8px;
 }
+  h2 {
+            font-size: 20px;
+        }
 .nome-album{
     color: white;
     display: flex;
@@ -123,8 +126,8 @@ i:hover{
     overflow-y: scroll;
     border: 1px solid #8930E8;
 }
-.qtd_hist {
-    top: 7%;
-    left: 63%;
+.musica.active {
+    background-color: #8a2be2;
+    color: white;
 }
 

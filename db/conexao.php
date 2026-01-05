@@ -1,9 +1,9 @@
 <?php
 function db() {
-    $host = "";
-    $user = "";
-    $pass = "";
-    $db = "";
+    $host = "192.168.15.6";
+    $user = "Marcos";
+    $pass = "Marcos12007.";
+    $db = "musica";
 
     $conn = new mysqli($host, $user, $pass, $db);
 

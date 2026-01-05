@@ -28,20 +28,29 @@ barraContainer.addEventListener("click", (e) => {
     musica.currentTime = novoTempo;
 });
 
-playPauseBtn.addEventListener("click", () => {
-    if (musica.paused) {
-        musica.play();
-        playPauseBtn.innerHTML = '<i class="fa-solid fa-circle-pause"></i>';
+musica.addEventListener("ended", () => {
+    if(currentIndex < musics.length - 1){
+        currentIndex++;
     } else {
-        musica.pause();
-        playPauseBtn.innerHTML = '<i class="fa-solid fa-circle-play"></i>';
+        currentIndex = 0;
     }
+    updateMusic();
 });
 
 document.getElementById("anterior").addEventListener("click", () => {
-    musica.currentTime = 0;
+    if(currentIndex > 0){
+        currentIndex--;
+    } else {
+        currentIndex = musics.length - 1;
+    }
+    updateMusic();
 });
 
 document.getElementById("proximo").addEventListener("click", () => {
-    musica.currentTime = musica.duration - 1;
+    if(currentIndex < musics.length - 1){
+        currentIndex++;
+    } else {
+        currentIndex = 0; 
+    }
+    updateMusic();
 });

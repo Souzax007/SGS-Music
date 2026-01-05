@@ -7,13 +7,17 @@
             height: 100vh;
             position: relative;
         }
-        .container{
+        .container {
             position: relative;
-            width: 1001px;
-            height: 600px;
-            border-radius: 5%;
+            width: 100%;
+            height: 90vh;
+            border-radius: 50px;
             border: 1px solid #8930E8;
-
+            margin: 30px;
+        }
+        a{
+            text-decoration: none;
+            font-size: 13px;
         }
         .pai{
             display: flex;
@@ -31,6 +35,7 @@
             border: 1px solid #8930E8;
 
         }
+      
         nav a i{
             color: blueviolet;
         }
